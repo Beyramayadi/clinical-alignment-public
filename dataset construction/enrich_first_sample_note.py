@@ -13,7 +13,7 @@ OUTPUT_JSON = "data/structured/menstrual_health_dataset_first_note_enriched.json
 
 # Environment variables still take precedence over these defaults.
 DEFAULT_API_KEY = os.environ.get("AZURE_OPENAI_API_KEY", "")
-DEFAULT_API_ENDPOINT = "https://fhgenie-api-iks-duo.openai.azure.com/"
+DEFAULT_API_ENDPOINT = os.environ.get("AZURE_OPENAI_ENDPOINT", "https://your-resource-name.openai.azure.com/")
 DEFAULT_MODEL = "gpt-5.1-2025-11-13"
 
 NOTE_INTENTS = {
